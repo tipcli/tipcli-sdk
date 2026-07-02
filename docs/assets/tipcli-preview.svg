@@ -1,0 +1,91 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">TipCLI terminal sponsor card preview</title>
+  <desc id="desc">A terminal-style preview showing the TipCLI SDK rendering one privacy-safe sponsor card in a human-visible CLI workflow.</desc>
+  <defs>
+    <linearGradient id="screen" x1="80" y1="52" x2="1120" y2="578" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f7f8f5"/>
+    </linearGradient>
+    <filter id="shadow" x="43" y="21" width="1114" height="594" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="10"/>
+      <feGaussianBlur stdDeviation="18"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.05 0 0 0 0 0.06 0 0 0 0 0.06 0 0 0 0.16 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_1"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_1" result="shape"/>
+    </filter>
+    <style>
+      .ui { font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .mono { font-family: "SFMono-Regular", "SF Mono", Consolas, "Liberation Mono", Menlo, monospace; }
+      .ink { fill: #171717; }
+      .muted { fill: #757575; }
+      .soft { fill: #f4f4f2; }
+      .green { fill: #0a8f61; }
+      .orange { fill: #f97316; }
+      .line { stroke: #dfdfdc; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="630" fill="#f2f2ef"/>
+  <g filter="url(#shadow)">
+    <rect x="72" y="48" width="1056" height="534" rx="28" fill="url(#screen)" stroke="#dededb" stroke-width="1.5"/>
+  </g>
+
+  <g class="ui">
+    <circle cx="116" cy="91" r="7" fill="#ff5f56"/>
+    <circle cx="140" cy="91" r="7" fill="#ffbd2e"/>
+    <circle cx="164" cy="91" r="7" fill="#27c93f"/>
+    <text x="194" y="97" fill="#757575" font-size="16" font-weight="600">terminal</text>
+    <rect x="974" y="72" width="104" height="38" rx="19" fill="#eef8f3" stroke="#ccebdd"/>
+    <circle cx="999" cy="91" r="6" fill="#10b981"/>
+    <text x="1013" y="97" fill="#08764f" font-size="15" font-weight="700">safe demo</text>
+  </g>
+
+  <g class="mono" font-size="21">
+    <text x="116" y="159" fill="#757575">$</text>
+    <text x="144" y="159" fill="#171717">npx @tipcli/sdk preview \</text>
+    <text x="144" y="194" fill="#171717">  --sponsor "Neon" \</text>
+    <text x="144" y="229" fill="#171717">  --message "Database branches..." \</text>
+    <text x="144" y="264" fill="#171717">  --url https://neon.tech</text>
+  </g>
+
+  <rect x="116" y="303" width="536" height="162" rx="18" fill="#ffffff" stroke="#d7d7d3" stroke-width="2"/>
+  <g class="ui">
+    <text x="150" y="354" class="muted" font-size="22">Sponsored by</text>
+    <text x="308" y="354" class="ink" font-size="22" font-weight="800">Neon</text>
+    <text x="150" y="397" class="ink" font-size="25" font-weight="650">Database branches for preview deploys.</text>
+    <text x="150" y="438" class="muted" font-size="21">neon.tech</text>
+  </g>
+
+  <g class="ui">
+    <text x="710" y="161" class="ink" font-size="44" font-weight="850">Sponsor cards for</text>
+    <text x="710" y="211" class="ink" font-size="44" font-weight="850">humans, not machines.</text>
+    <text x="712" y="254" class="muted" font-size="20">Privacy-safe sponsorship for open-source</text>
+    <text x="712" y="282" class="muted" font-size="20">tools, AI agents, MCP servers, and CLIs.</text>
+
+    <rect x="710" y="323" width="182" height="42" rx="21" fill="#f4f4f2" stroke="#dfdfdc"/>
+    <circle cx="735" cy="344" r="7" class="green"/>
+    <text x="752" y="351" class="ink" font-size="18" font-weight="700">1 card/process</text>
+
+    <rect x="910" y="323" width="143" height="42" rx="21" fill="#f4f4f2" stroke="#dfdfdc"/>
+    <circle cx="935" cy="344" r="7" class="green"/>
+    <text x="952" y="351" class="ink" font-size="18" font-weight="700">CI skipped</text>
+
+    <rect x="710" y="381" width="234" height="42" rx="21" fill="#f4f4f2" stroke="#dfdfdc"/>
+    <circle cx="735" cy="402" r="7" class="green"/>
+    <text x="752" y="409" class="ink" font-size="18" font-weight="700">No prompts/logs/env</text>
+
+    <rect x="710" y="439" width="215" height="42" rx="21" fill="#f4f4f2" stroke="#dfdfdc"/>
+    <circle cx="735" cy="460" r="7" class="green"/>
+    <text x="752" y="467" class="ink" font-size="18" font-weight="700">Agent-safe surfaces</text>
+  </g>
+
+  <line x1="116" y1="510" x2="1084" y2="510" class="line" stroke-width="1"/>
+  <g class="ui">
+    <text x="116" y="547" class="ink" font-size="24" font-weight="850">TipCLI</text>
+    <text x="200" y="547" class="muted" font-size="19">human-visible open-source sponsorship</text>
+    <text x="890" y="547" class="muted" font-size="19">npx @tipcli/sdk trust</text>
+  </g>
+</svg>

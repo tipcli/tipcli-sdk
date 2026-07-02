@@ -2,6 +2,8 @@
 
 Privacy-safe sponsor cards for open-source tools and AI-agent workflows.
 
+![TipCLI terminal sponsor card preview](https://raw.githubusercontent.com/tipcli/tipcli-sdk/main/docs/assets/tipcli-preview.svg)
+
 TipCLI helps maintainers show one tasteful sponsor card in a human-visible
 software moment: a CLI completion summary, AI agent run report, MCP health page,
 template post-create handoff, plugin panel, local dashboard, or dev-server UI.
