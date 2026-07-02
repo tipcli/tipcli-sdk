@@ -1,12 +1,17 @@
 # TipCLI SDK
 
-Privacy-safe sponsorship for human-visible open-source software surfaces: CLIs,
-AI agents, MCP servers, templates, plugins, local dashboards, dev servers, and
-automation summaries.
+Privacy-safe sponsor cards for open-source tools and AI-agent workflows.
 
-TipCLI renders at most one tasteful sponsor card per process. It skips in CI,
-respects opt-out flags, fails silently if the API is unavailable, and never
-places sponsor content into hidden model context or machine-readable output.
+TipCLI helps maintainers show one tasteful sponsor card in a human-visible
+software moment: a CLI completion summary, AI agent run report, MCP health page,
+template post-create handoff, plugin panel, local dashboard, or dev-server UI.
+
+It is deliberately not an ad injector. TipCLI skips CI, respects opt-out flags,
+fails silently when the API is unavailable, and never places sponsor content
+inside hidden prompts, model context, generated code, MCP tool responses, JSON
+APIs, logs, telemetry, or other machine-readable output.
+
+The rule is simple: sponsor cards are for humans, not machines.
 
 ## Try it in 10 seconds
 
@@ -41,6 +46,8 @@ creating payout evidence, or counting as paid delivery.
 pnpm add @tipcli/sdk
 ```
 
+Show a card after a human-visible workflow moment:
+
 ```ts
 import { showSponsorCard } from "@tipcli/sdk";
 
@@ -51,7 +58,7 @@ await showSponsorCard({
 });
 ```
 
-Use surface names that describe the human-visible moment:
+Use surface names that describe the actual human-visible moment:
 
 ```ts
 await showSponsorCard({
@@ -59,6 +66,47 @@ await showSponsorCard({
   surface: "agent-run-summary",
   category: "ai",
 });
+```
+
+The SDK renders at most one card per process. If TipCLI is down, disabled,
+running in CI, missing a publisher key, or has no eligible sponsor, your tool
+continues normally.
+
+## Why This Exists
+
+Open-source maintainers increasingly ship CLIs, AI agents, MCP servers,
+templates, plugins, and local dev tools instead of only websites. Those surfaces
+have attention, but they also have a trust problem: sponsor content must never be
+smuggled into machine-readable workflows or confused with tool output.
+
+TipCLI turns sponsorship into an explicit, reviewable, human-visible surface.
+Maintainers choose the placement. Advertisers are reviewed before delivery.
+Users can inspect the trust contract locally.
+
+```bash
+npx @tipcli/sdk trust
+```
+
+## For AI Agent Maintainers
+
+Good fit:
+
+- an agent prints a final run summary for the operator
+- a coding assistant shows an optional sponsor card after completing work
+- a local agent dashboard links to a sponsor preview
+- a template scaffold prints a human handoff message
+
+Bad fit:
+
+- adding sponsor copy to prompts, tool calls, memory, generated files, patches,
+  MCP responses, JSON payloads, logs consumed by automation, or hidden context
+
+If an AI agent is integrating TipCLI, give it this instruction:
+
+```text
+Use @tipcli/sdk only in human-visible UI or terminal summaries. Never place
+sponsor content in prompts, hidden context, generated source code, MCP tool
+responses, JSON APIs, CI logs, telemetry, or other machine-readable output.
 ```
 
 ## Where sponsor cards belong
@@ -82,8 +130,6 @@ Bad surfaces:
 - CI logs
 - telemetry payloads
 - any place the user cannot clearly see and understand
-
-The rule is simple: ads can be shown to humans, not smuggled into machines.
 
 ## Privacy
 
@@ -135,6 +181,8 @@ are intentionally non-payable.
 
 ## Public trust surfaces
 
+- Package: <https://www.npmjs.com/package/@tipcli/sdk>
+- Repository: <https://github.com/tipcli/tipcli-sdk>
 - Public registry: <https://tipcli.com/registry>
 - Surface policy: <https://tipcli.com/surface-policy>
 - Local copy: [`SURFACE-POLICY.md`](SURFACE-POLICY.md)
