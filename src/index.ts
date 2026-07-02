@@ -9,7 +9,7 @@ export type {
   SponsorCard,
 } from "./types";
 
-const SDK_VERSION = "0.1.0";
+const SDK_VERSION = "0.1.1";
 const DEFAULT_TIMEOUT_MS = 1000;
 const DEFAULT_API_BASE_URL = "https://tipcli.com";
 

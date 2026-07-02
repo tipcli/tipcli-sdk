@@ -136,7 +136,7 @@ async function runDoctor(flags: ParsedArgs["flags"], io: CliIo): Promise<number>
       apiBaseUrl,
       deliveryMode: "test",
       publisherKey,
-      sdkVersion: "0.1.0",
+      sdkVersion: "0.1.1",
       sessionId: "tipcli-doctor",
       surface,
       timeoutMs: 3000,

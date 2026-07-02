@@ -1,6 +1,6 @@
 {
   "name": "@tipcli/sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Privacy-safe sponsor cards for human-visible open-source software surfaces.",
   "keywords": [
     "ai-agents",

@@ -47,7 +47,7 @@ const packageJson = JSON.stringify({
   },
   type: "module",
   types: "./dist/index.d.ts",
-  version: "0.1.0",
+  version: "0.1.1",
 });
 
 describe("auditSdkPublishReadiness", () => {
@@ -74,7 +74,7 @@ describe("auditSdkPublishReadiness", () => {
       memoryFs({
         "package.json": JSON.stringify({
           name: "@tipcli/sdk",
-          version: "0.1.0",
+          version: "0.1.1",
         }),
       }),
     );
