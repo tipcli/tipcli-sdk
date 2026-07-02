@@ -70,7 +70,7 @@ function hasTrustedPublishingRepository(packageJson: PackageJson): boolean {
 
   return (
     repository?.["type"] === "git" &&
-    repository["url"] === "git+https://github.com/martinpagac01/tipcli-sdk.git"
+    repository["url"] === "git+https://github.com/tipcli/tipcli-sdk.git"
   );
 }
 

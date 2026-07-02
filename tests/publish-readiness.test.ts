@@ -40,7 +40,7 @@ const packageJson = JSON.stringify({
   name: "@tipcli/sdk",
   repository: {
     type: "git",
-    url: "git+https://github.com/martinpagac01/tipcli-sdk.git",
+    url: "git+https://github.com/tipcli/tipcli-sdk.git",
   },
   scripts: {
     "consumer:smoke": "pnpm build && tsx scripts/consumer-smoke.ts",

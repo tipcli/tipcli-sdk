@@ -20,12 +20,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/martinpagac01/tipcli-sdk.git"
+    "url": "git+https://github.com/tipcli/tipcli-sdk.git"
   },
   "bugs": {
-    "url": "https://github.com/martinpagac01/tipcli-sdk/issues"
+    "url": "https://github.com/tipcli/tipcli-sdk/issues"
   },
-  "homepage": "https://github.com/martinpagac01/tipcli-sdk#readme",
+  "homepage": "https://github.com/tipcli/tipcli-sdk#readme",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
