@@ -1,0 +1,65 @@
+{
+  "name": "@tipcli/sdk",
+  "version": "0.1.0",
+  "description": "Privacy-safe sponsor cards for human-visible open-source software surfaces.",
+  "keywords": [
+    "ai-agents",
+    "cli",
+    "developer-tools",
+    "mcp",
+    "open-source",
+    "privacy",
+    "sponsorship",
+    "terminal"
+  ],
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.7.0",
+  "bin": {
+    "tipcli": "./dist/bin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martinpagac01/tipcli-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/martinpagac01/tipcli-sdk/issues"
+  },
+  "homepage": "https://github.com/martinpagac01/tipcli-sdk#readme",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "SURFACE-POLICY.md",
+    "LICENSE",
+    "recipes"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "consumer:smoke": "pnpm build && tsx scripts/consumer-smoke.ts",
+    "publish:check": "tsx scripts/publish-check.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "boxen": "^8.0.1",
+    "chalk": "^5.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "commander": "^14.0.2",
+    "tsup": "latest",
+    "tsx": "^4.22.4",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
